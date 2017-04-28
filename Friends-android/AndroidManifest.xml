@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.nkcs.friends"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- wifi和数据访问权限 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" >
+    </uses-permission>
+    
+    <application
+        android:name="com.nkcs.friends.app.MyApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        <activity
+            android:name="com.nkcs.friends.activity.LoginActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.SelectInterestActivity"
+            android:label="@string/title_activity_select_interest" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.PostActivity"
+            android:label="@string/title_activity_post" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.UserHomeActivity"
+            android:label="@string/title_activity_user_home" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.UserUpdateActivity"
+            android:label="@string/title_activity_user_update" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.DateTimeActivity"
+            android:label="@string/title_activity_date_time" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.ActivityActivity"
+            android:label="@string/title_activity_activity" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.ActivityInfoActivity"
+            android:label="@string/title_activity_activity_info" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.TabHostActivity"
+            android:label="@string/title_activity_tab_host" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.LatestActivity"
+            android:label="@string/title_activity_latest" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.UserCalendarActivity"
+            android:label="@string/title_activity_user_calendar" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.fragment.FragmentManagerActivity"
+            android:label="@string/title_activity_fragment_manager" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.WelcomeActivity"
+            android:label="@string/title_activity_welcome" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mrwujay.cascade.activity.BaseActivity"
+            android:label="@string/title_activity_base" >
+        </activity>
+        <activity
+            android:name="com.mrwujay.cascade.activity.MapActivity"
+            android:label="@string/title_activity_map" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.ChatActivity"
+            android:label="@string/title_activity_chat" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.MyFriendsActivity"
+            android:label="@string/title_activity_my_friends" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.NotificationActivity"
+            android:label="@string/title_activity_notification" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.ai.AIActivity"
+            android:label="@string/title_activity_ai" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.SelectFriendsActivity"
+            android:label="@string/title_activity_select_friends" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.ChatRoomActivity"
+            android:label="@string/title_activity_chat_room" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.NotificationActivitiesActivity"
+            android:label="@string/title_activity_notification_activities" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.fragment.FriendActivity"
+            android:label="@string/title_activity_friend" >
+        </activity>
+        <activity
+            android:name="com.nkcs.friends.activity.SecondInterestActivity"
+            android:label="@string/title_activity_second_interest" >
+
+        </activity>
+    </application>
+
+</manifest>

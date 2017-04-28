@@ -1,0 +1,190 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".PostActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtActivityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="名称：" />
+
+        <EditText
+            android:id="@+id/edtActivityName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="57dp"
+            android:layout_weight="1"
+            android:ems="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp" >
+
+        <TextView
+            android:id="@+id/txtLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="标签：" />
+
+        <TextView
+            android:id="@+id/txtInterest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="57dp"
+            android:hint="点击选取兴趣标签" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtMaxNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最大人数：" />
+
+        <EditText
+            android:id="@+id/edtMaxNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/txtDeadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="报名截止时间：" />
+
+        <TextView
+            android:id="@+id/txtDeadlineInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="点击选取截止时间" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/txtStartTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动开始时间：" />
+
+        <TextView
+            android:id="@+id/txtStartTimeInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="点击选取开始时间" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/txtEndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动结束时间：" />
+
+        <TextView
+            android:id="@+id/txtEndTimeInput"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="点击选取结束时间" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/txtActivityAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动地址：" />
+
+        <TextView
+            android:id="@+id/txtActAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:hint="点击选取活动地址" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/txtActivityPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="活动图片：" />
+
+        <ImageView
+            android:id="@+id/imgActivity"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="27dp"
+            android:src="@drawable/ic_launcher" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/txtActContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="活动描述：" />
+
+        <EditText
+            android:id="@+id/edtActContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="27dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:lines="3" >
+
+            <requestFocus />
+        </EditText>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <com.nkcs.friends.slidemenu.XCSlideMenu
+        android:id="@+id/slideMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                layout="@layout/activity_user_home" />
+
+            <RelativeLayout
+                android:id="@+id/RelativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/LinearLayout1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_weight="1" >
+                </FrameLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/tab_bg" >
+
+                    <RelativeLayout
+                        android:id="@+id/fragment_interest_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:layout_width="160dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/interest_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/interest_unselected" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/fragment_recommend_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:layout_width="160dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/recommend_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/recommend_unselected" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/fragment_latest_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:layout_width="160dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/latest_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/latest_unselected" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/fragment_friend_layout"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" >
+
+                        <LinearLayout
+                            android:layout_width="160dp"
+                            android:layout_height="60dp"
+                            android:layout_centerVertical="true"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:id="@+id/user_image"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/user_unselected" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/include1"
+                    layout="@layout/menu_center_suitable" />
+            </RelativeLayout>
+        </LinearLayout>
+    </com.nkcs.friends.slidemenu.XCSlideMenu>
+
+</RelativeLayout>

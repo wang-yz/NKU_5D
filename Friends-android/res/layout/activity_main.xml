@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.nkcs.friends.slidemenu.XCSlideMenu
+        android:id="@+id/slideMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                layout="@layout/activity_user_home" />
+
+<!--             <LinearLayout -->
+<!--                 android:layout_width="match_parent" -->
+<!--                 android:layout_height="match_parent" > -->
+
+<!--                 <TextView -->
+<!--                     android:id="@+id/btnSwitch" -->
+<!--                     android:layout_width="wrap_content" -->
+<!--                     android:layout_height="wrap_content" -->
+<!--                     android:layout_margin="10dp" -->
+<!--                     android:padding="5dp" -->
+<!--                     android:text="切换菜单" -->
+<!--                     android:textColor="#FFF" -->
+<!--                     android:textSize="16sp" /> -->
+<!--             </LinearLayout> -->
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical" >
+            
+            <TextView
+                android:id="@+id/txtInterestFirst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="(一级兴趣标签)"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <ListView
+                android:id="@+id/lvwShow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" >
+            </ListView>
+          </LinearLayout>        
+            
+        </LinearLayout>
+    </com.nkcs.friends.slidemenu.XCSlideMenu>
+
+</RelativeLayout>

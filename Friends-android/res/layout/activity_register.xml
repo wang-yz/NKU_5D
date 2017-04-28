@@ -1,0 +1,157 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".RegisterActivity" >
+
+    <TextView
+        android:id="@+id/txtReg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:text="用户注册"
+        android:textColor="#ffffff"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageViewUser"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/user" />
+
+            <EditText
+                android:id="@+id/edtname"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:textColor="#ffffff" >
+
+                <requestFocus />
+            </EditText>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewLine1"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/linearLayout2"
+            android:src="@drawable/line" />
+ 
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageViewPassword"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_weight="1.02"
+                android:src="@drawable/password" />
+
+            <EditText
+                android:id="@+id/edtpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:textColor="@color/aliceblue" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewLine2"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout3"
+            android:src="@drawable/line" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:id="@+id/imageViewPhone"
+                android:layout_width="40dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:src="@drawable/phone" />
+
+            <EditText
+                android:id="@+id/edtphone"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ems="10"
+                android:inputType="number"
+                android:textColor="@color/aliceblue" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewLine3"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/linearLayout4"
+            android:src="@drawable/line" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="70dp"
+        android:background="#00dddd"
+        android:onClick="Register"
+        android:text="Register"
+        android:textColor="#ffffff" />
+
+</LinearLayout>
