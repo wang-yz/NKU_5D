@@ -70,7 +70,7 @@ public class ChatActivity extends Activity {
         
 		nickname = users.getNickname();
 		//ip = users.getIp();
-		ip = "192.168.56.1";
+		ip = "60.205.30.58";
 		port = "8080";
 		
         //设置连接
