@@ -36,7 +36,7 @@ public class LoginActivity extends Activity {
 	private EditText edtPassword;
 	private CheckBox chkRemember;
 
-	private String url = "http://192.168.56.1:8088/Friends/UserLoginServlet";
+	private String url = "http://123.206.20.37:8080/Friends/UserLoginServlet";
 
 	private String responseText;
 

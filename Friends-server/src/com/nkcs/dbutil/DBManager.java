@@ -25,7 +25,7 @@ public class DBManager {
 	private void openConnection(){
 		
 		try {
-			this.conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/friends", "root", "root"); // 3306是MySQL
+			this.conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/friends", "root", "123456"); // 3306是MySQL
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

@@ -29,7 +29,7 @@ public class MyApp extends Application {
 	
 	// 协同开发需要 定义全局URL
 	public String getLiuURL() {
-		this.LiuURL = "http://192.168.56.1:8088/Friends/";
+		this.LiuURL = "http://123.206.20.37:8080/Friends/";
 		return LiuURL;
 	}
 }
