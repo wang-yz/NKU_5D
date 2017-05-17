@@ -23,24 +23,24 @@ public class UserHomeActivity extends Activity {
 
 	private TextView txtUserName;
 	private ImageView imgUserPhoto;
-	//����ȡ�û��ȷ��ص�ͼ��
+	//网址
 	private Uri imageUri;
 	private Dialog exitDialog;
 	
-	//ͼƬ����ʱ�ĵ�ַ
-	private String imageURL = "http://10.0.2.2:8088/Friends/image/photo/";
+	//服务器网址
+	private String imageURL = "http://123.206.20.37:8080/Friends/image/photo/";
 	
-	private String url = "http://10.0.2.2:8088/Friends/FileUploadServlet";
+	private String url = "http://123.206.20.37:8080/Friends/FileUploadServlet";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_user_home);
 		
-		//��ȡ����
+		//获取组件
 		txtUserName=(TextView) findViewById(R.id.txtUserName);
 		imgUserPhoto=(ImageView) findViewById(R.id.imgUserPhoto);
 		
-		//��ʾ�û���Ϣ
+		//显示
 		showUserInfo();
 		
 		createDialog();
@@ -60,20 +60,20 @@ public class UserHomeActivity extends Activity {
 		myApp.setUser(user);
 		
 		txtUserName.setText(user.getUsername());
-		//ƴ���û�ͷ�����ļ���
+		//获取头像
 		imageURL += user.getPhoto();
 
-		//��������ͼƬ���첽����
+		//--------
 		new ImageLoadTask(imgUserPhoto).execute(imageURL);
 	}
-	//����ͷ��
+	//查找头像
 	public void selectPhoto(View v){
 		
 		Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 
 		startActivityForResult(intent, 1);
 	}
-	//�û���Ϣ����
+	
 	public void info(View v){
 		Intent intent = new Intent(UserHomeActivity.this, UserUpdateActivity.class);
 		
@@ -82,7 +82,7 @@ public class UserHomeActivity extends Activity {
 	}
 	
 	
-	//�˳��Ի����¼�������
+	//响应
 	private class ExitOnClickImpl implements DialogInterface.OnClickListener {
 
 		@Override
@@ -90,7 +90,6 @@ public class UserHomeActivity extends Activity {
 
 //			if (id == DialogInterface.BUTTON_POSITIVE  && dialog.equals(exitDialog)) {
 //
-//				//ɾ���û���Ϣ
 //				SharedPreferences sp = getSharedPreferences("UserInfo", MODE_PRIVATE);
 //
 //				Editor editor = sp.edit();
@@ -109,7 +108,7 @@ public class UserHomeActivity extends Activity {
 		}
 	}
 	
-	//�����˳��Ի���
+	//对话框
 	private void createDialog(){
 		
 		Builder builder = new Builder(this);
@@ -121,7 +120,7 @@ public class UserHomeActivity extends Activity {
 		exitDialog = builder.create();	
 	}
 	
-	//�˳�
+	//弹出
 	public void exit(View v){
 		exitDialog.show();
 	}
@@ -130,23 +129,20 @@ public class UserHomeActivity extends Activity {
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-		//�ж��Ƿ��ӻ���Ӧ�÷���
 		if(requestCode == 1){
 
 			if(resultCode == RESULT_OK){
-
-				//����ͼƬ��uri  
+				
 				imageUri = data.getData();
 
-				//����ͼƬ����
 				imgUserPhoto.setImageURI(imageUri);
 				
-				//��Uriת����ͼƬ��ʵ��·��
+				//图片网址
 				String photoPath = StringUtil.getRealPathFromURI(getApplicationContext(), imageUri);
 
 				MyApp myApp = (MyApp) getApplication();
 
-				//��������ͼƬ���첽����
+				//获取全局文件
 				new FileUploadTask(this,myApp).execute(url, photoPath);
 			}				
 		}
