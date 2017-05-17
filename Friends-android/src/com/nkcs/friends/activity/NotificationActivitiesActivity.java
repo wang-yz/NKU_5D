@@ -21,7 +21,7 @@ public class NotificationActivitiesActivity extends Activity {
 	txtNotifiStartTime, txtNotifiNum, txtNotifiIntro;
 	private String name, address, deadline, starttime, curNumber, intro, picture;
 	private ImageView imgActivityNotification;
-	private String imageURL = "http://123.206.20.37:8080/Friends/image/photo/";
+	private String imageURL = "http://10.0.2.2:8080/Friends/image/photo/";
 	private CheckBox ckbNotmore;
 	private int activityid, userid;
 	

@@ -130,7 +130,36 @@ public class LatestFragment extends Fragment implements OnTouchListener, IXListV
 	@SuppressLint("NewApi")
 	@Override
 	public boolean onTouch(View arg0, MotionEvent event) {
-
+//		float y = event.getY();
+//		switch (event.getAction()) {
+//		case MotionEvent.ACTION_DOWN:
+//			// 第一次按下时的Y坐标
+//			fist_down_Y = y;
+//			break;
+//		case MotionEvent.ACTION_MOVE:
+//			// 向上滑动，隐藏搜索栏
+//			if (fist_down_Y - y > 250 && ll_search_latest.isShown()) {
+//				if (animationSet != null) {
+//					animationSet = null;
+//				}
+//				animationSet = (AnimationSet) AnimationUtils.loadAnimation(getActivity(), R.anim.up_out);
+//				ll_search_latest.startAnimation(animationSet);
+//				ll_search_latest.setY(-100);
+//				ll_search_latest.setVisibility(View.GONE);
+//			}
+//			// 向下滑动，显示搜索栏
+//			if (y - fist_down_Y > 250 && !ll_search_latest.isShown()) {
+//				if (animationSet != null) {
+//					animationSet = null;
+//				}
+//				animationSet = (AnimationSet) AnimationUtils.loadAnimation(getActivity(), R.anim.down_in);
+//				ll_search_latest.startAnimation(animationSet);
+//				ll_search_latest.setY(0);
+//				ll_search_latest.setVisibility(View.VISIBLE);
+//			}
+//			break;
+//
+//		}
 		return false;
 	}
 

@@ -1,4 +1,4 @@
-package com.nkcs.dbutil;
+﻿package com.nkcs.dbutil;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

@@ -90,10 +90,10 @@ public class AddActivityTask extends AsyncTask<String, Void, String> {
 	@Override
 	protected void onPostExecute(String result) {
 		// TODO Auto-generated method stub
-		if(result.equals("成功"))
-			Toast.makeText(context, "添加成功", Toast.LENGTH_SHORT).show();
+		if(result.equals("�ļ��ϴ�ʧ��"))
+			Toast.makeText(context, "�ļ��ϴ�ʧ��", Toast.LENGTH_SHORT).show();
 		else 
-			Toast.makeText(context, "添加失败", Toast.LENGTH_SHORT).show();
+			Toast.makeText(context, "�ļ��ϴ��ɹ�", Toast.LENGTH_SHORT).show();
 		super.onPostExecute(result);
 	}
 

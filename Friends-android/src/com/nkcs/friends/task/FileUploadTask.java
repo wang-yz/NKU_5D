@@ -57,7 +57,7 @@ public class FileUploadTask extends AsyncTask<String, Void, String> {
 //	    	Users user=myApp.getUser();
 
 
-			Users user=new Users(1,"user1","111","用户","1.gif","",50,"","","","1234324234");	
+			Users user=new Users(1,"user1","111","��","1.gif","",50,"","","","1234324234");	
 	    	
 	    	StringBody username = new StringBody(user.getUsername(), Charset.forName("utf-8"));
 	    	entity.addPart("username", username);
@@ -92,9 +92,9 @@ public class FileUploadTask extends AsyncTask<String, Void, String> {
 		Users user = gson.fromJson(result, Users.class);
 		if(user!=null){
 			myApp.setUser(user);
-			Toast.makeText(context, "成功", Toast.LENGTH_SHORT).show();
+			Toast.makeText(context, "���³ɹ�", Toast.LENGTH_SHORT).show();
 		}else {
-			Toast.makeText(context, "失败", Toast.LENGTH_SHORT).show();
+			Toast.makeText(context, "����ʧ��", Toast.LENGTH_SHORT).show();
 		}
 			
 		
