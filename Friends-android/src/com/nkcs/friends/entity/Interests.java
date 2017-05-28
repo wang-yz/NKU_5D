@@ -42,5 +42,4 @@ public class Interests implements Serializable {
 		this.int_image = int_image;
 	}
 	
-	
 }

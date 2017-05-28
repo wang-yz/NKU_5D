@@ -36,6 +36,7 @@ public class MainActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		
+		
 	      //requestWindowFeature(Window.FEATURE_NO_TITLE);
 //	      xcSlideMenu = (XCSlideMenu) findViewById(R.id.slideMenu);
 //	      btnSwitch = (TextView)findViewById(R.id.btnSwitch);

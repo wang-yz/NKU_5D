@@ -19,6 +19,8 @@ public class MapActivity extends BaseActivity implements OnClickListener, OnWhee
 	private Button mBtnConfirm;
 	private Intent intent;
 
+	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

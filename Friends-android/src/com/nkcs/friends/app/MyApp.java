@@ -8,7 +8,9 @@ import android.app.Application;
 public class MyApp extends Application {
 	
 	private Users user;
+	
 	private Activities activity;
+	
 	private String LiuURL;
 	
 	public Users getUser() {

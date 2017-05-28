@@ -17,7 +17,7 @@ public class Footer extends LinearLayout {
 	public final static int STATE_LOADING = 2;
 
 	private Context mContext;
-
+	
 	private View mContentView;
 	private View mProgressBar;
 

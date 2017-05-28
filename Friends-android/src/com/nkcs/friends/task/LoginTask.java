@@ -44,6 +44,7 @@ public class LoginTask extends AsyncTask<String, Void, String> {
 
 	private String ip;
 	
+	
 	private LoginActivity login;
 	private ProgressDialog loginDialog;
 	private CheckBox chkAutoLogin;

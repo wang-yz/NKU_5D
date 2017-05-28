@@ -41,6 +41,7 @@ public class SelectInterestActivity extends Activity {
 		this.adapter = new SecondInterestAdapter(getApplicationContext(), data);
 		this.listView.setAdapter(adapter);
 		
+		
 		myApp = (MyApp) getApplicationContext();
 		Users user = myApp.getUser();
 		userid=user.getUserid();

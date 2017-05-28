@@ -28,6 +28,7 @@ public class FriendsPhotoTask extends AsyncTask<String, Void, Bitmap> {
 		this.imageURL = myApp.getLiuURL() + "image/photo/";
 	}
 	
+	
 	@Override
 	protected Bitmap doInBackground(String... arg0) {
 

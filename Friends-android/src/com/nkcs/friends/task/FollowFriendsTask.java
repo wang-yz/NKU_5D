@@ -35,6 +35,7 @@ public class FollowFriendsTask extends AsyncTask<String, Void, String> {
 		this.url = myApp.getLiuURL() + "FollowFriendsServlet";
 	}
 
+	
 	@Override
 	protected String doInBackground(String... arg0) {
 		

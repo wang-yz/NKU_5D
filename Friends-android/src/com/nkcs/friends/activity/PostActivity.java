@@ -37,6 +37,7 @@ public class PostActivity extends Activity {
 	private String realPath = null;
 	private Uri uri;
 	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

@@ -51,6 +51,7 @@ public class ShowCalendarTask extends AsyncTask<String, Void, String> {
 		this.url = myApp.getLiuURL() + "CalendarShowServlet";
 	}
 
+	
 	@Override
 	protected String doInBackground(String... arg0) {
 		userid = arg0[0];

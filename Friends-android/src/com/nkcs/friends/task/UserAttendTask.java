@@ -38,6 +38,7 @@ public class UserAttendTask extends AsyncTask<String, Void, String> {
 		this.context = context;
 		this.myApp=myApp;
 	}
+	
 	@Override
 	protected String doInBackground(String... arg0) {
 		//初始

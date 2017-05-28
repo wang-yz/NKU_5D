@@ -39,6 +39,7 @@ public class UserUpdateActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_user_update);
 		
+		
 		edtNickname = (EditText) findViewById(R.id.edtNickname);
 		edtPassword = (EditText) findViewById(R.id.edtPassword);
 		edtPhonenumber = (EditText) findViewById(R.id.edtPhonenumber);

@@ -23,6 +23,7 @@ public class Activities implements Serializable {
 	private String act_address2;
 	private String act_intro;
 	
+	
 	public Activities() {
 		super();
 	}

@@ -21,6 +21,7 @@ import com.nkcs.friends.app.MyApp;
 
 import android.os.AsyncTask;
 
+
 public class NotmoreTask extends AsyncTask<String, Void, String> {
 
 	private String url;

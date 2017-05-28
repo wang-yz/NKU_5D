@@ -32,6 +32,7 @@ public class TabHostActivity extends TabActivity {
 		addTab("act4", "个人中心", UserHomeActivity.class);
 
 	}
+	
 
 	private void addTab(String tag, String title, Class clazz) {
 		TabSpec tabSpec = tabhost.newTabSpec(tag);

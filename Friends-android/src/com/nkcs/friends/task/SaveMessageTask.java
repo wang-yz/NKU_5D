@@ -32,6 +32,7 @@ public class SaveMessageTask extends AsyncTask<String, Void, String> {
 		this.chatActivity = chatActivity;
 		
 		MyApp myApp = new MyApp();
+		
 		this.url = myApp.getLiuURL() + "SaveMessageServlet";
 	}
 

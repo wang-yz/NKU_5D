@@ -31,6 +31,7 @@ public class SecondInterestAdapter extends BaseAdapter {
 	private List<Map<String, Object>> mData;
 	public static Map<Integer, Boolean> isSelected;
 
+	
 	// 构造函数
 	public SecondInterestAdapter(Context context, List<String> data) {
 		this.context = context;

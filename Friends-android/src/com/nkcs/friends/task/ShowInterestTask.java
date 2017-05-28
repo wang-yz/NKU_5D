@@ -47,6 +47,7 @@ public class ShowInterestTask extends AsyncTask<String, Void, String> {
 	protected String doInBackground(String... arg0) {
 		int_type = arg0[0];
 		
+		
 		System.out.println("int_type = " + int_type);
 
 		// 实例化HttpClient对象

@@ -1,5 +1,6 @@
 package com.nkcs.friends.fragment;
 
+
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.AlertDialog.Builder;

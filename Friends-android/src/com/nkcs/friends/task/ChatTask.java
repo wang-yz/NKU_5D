@@ -11,6 +11,7 @@ import android.os.AsyncTask;
 
 public class ChatTask extends AsyncTask<String, Void, String> {
     ChatActivity chatActivity;
+    
     public ChatTask(ChatActivity chatActivity) {
 		super();
 		this.chatActivity = chatActivity;

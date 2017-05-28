@@ -9,6 +9,7 @@ import android.util.AttributeSet;
 
 public class CircularImage extends MaskedImage {
 
+	
 	public CircularImage(Context paramContext) {  
 		        super(paramContext);  
 		    }  

@@ -34,6 +34,7 @@ public class ChatRoomActivity extends Activity {
 	
 	private MyAdapter adapter;
 	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

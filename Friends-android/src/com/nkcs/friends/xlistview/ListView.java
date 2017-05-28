@@ -348,7 +348,6 @@ public class ListView extends android.widget.ListView implements OnScrollListene
 	 */
 	public interface IXListViewListener {
 		public void onRefresh();
-
 		public void onLoadMore();
 	}
 

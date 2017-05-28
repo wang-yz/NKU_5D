@@ -16,6 +16,7 @@ public abstract class MaskedImage extends ImageView {
 	private Bitmap mask;
 	private Paint paint;
 
+	
 	static {
 		PorterDuff.Mode localMode = PorterDuff.Mode.DST_IN;
 		MASK_XFERMODE = new PorterDuffXfermode(localMode);

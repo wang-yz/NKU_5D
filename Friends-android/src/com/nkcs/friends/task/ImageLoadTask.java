@@ -18,6 +18,7 @@ public class ImageLoadTask extends AsyncTask<String, Void, Bitmap> {
 		this.imgView = imgView;
 	}
 	
+	
 	@Override
 	protected Bitmap doInBackground(String... arg0) {
 

@@ -24,6 +24,7 @@ public class SecondInterestActivity extends Activity {
 	public List<Interests> dataInterest;
 	public InterestAdapter adapterInterest;
 
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

@@ -35,6 +35,7 @@ public class InterestAdapter extends BaseAdapter {
 
 	@Override
 	public int getCount() {
+		
 		return data.size();
 	}
 

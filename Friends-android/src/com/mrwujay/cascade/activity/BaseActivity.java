@@ -25,6 +25,8 @@ public class BaseActivity extends Activity {
 	protected String mCurrentDistrictName ="";
 	protected String mCurrentZipCode ="";
 	
+	
+	
     protected void initProvinceDatas()
 	{
 		List<ProvinceModel> provinceList = null;

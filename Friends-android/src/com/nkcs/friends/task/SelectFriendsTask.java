@@ -42,6 +42,7 @@ public class SelectFriendsTask extends AsyncTask<String, Void, String> {
 		this.dataList = dataList;
 		
 		MyApp myApp = new MyApp();
+		
 		this.url = myApp.getLiuURL() + "SelectFriendsServlet";
 	}
 
