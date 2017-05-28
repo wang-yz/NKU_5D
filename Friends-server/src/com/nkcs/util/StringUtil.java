@@ -1,4 +1,4 @@
-package com.nkcs.util;
+﻿package com.nkcs.util;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
