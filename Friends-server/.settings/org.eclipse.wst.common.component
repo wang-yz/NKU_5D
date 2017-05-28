@@ -4,5 +4,5 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
         <property name="context-root" value="Friends"/>
         <property name="java-output-path" value="/Friends/build/classes"/>
-    </wb-module>
+    </wb-module> 
 </project-modules>
