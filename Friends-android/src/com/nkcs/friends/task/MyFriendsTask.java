@@ -43,6 +43,7 @@ public class MyFriendsTask extends AsyncTask<String, Void, String> {
 		this.list_FriendFragment = list_FriendFragment;
 		this.dataList = dataList;
 		
+		
 		MyApp myApp = new MyApp();
 		this.url = myApp.getLiuURL() + "MyFriendsServlet";
 	}

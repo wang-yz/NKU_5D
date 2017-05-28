@@ -2,6 +2,8 @@ package com.mrwujay.cascade.model;
 
 import java.util.List;
 
+
+
 public class CityModel {
 	private String name;
 	private List<DistrictModel> districtList;

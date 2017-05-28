@@ -44,6 +44,7 @@ public class LatestActivity extends Activity implements OnTouchListener, IXListV
 	private String startNum = "0";
 	private String pageSize = "10";
 
+	
 	// 显示所有活动列表
 	private ListView lvwActivity;
 	// 整个顶部搜索控件，用于隐藏和显示底部整个控件

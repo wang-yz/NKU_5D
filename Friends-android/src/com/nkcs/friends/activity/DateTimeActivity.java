@@ -26,6 +26,7 @@ public class DateTimeActivity extends Activity {
         DatePicker datePicker=(DatePicker)findViewById(R.id.datePicker);
         TimePicker timePicker=(TimePicker)findViewById(R.id.timePicker);
         
+        
         Calendar calendar=Calendar.getInstance();
         int year=calendar.get(Calendar.YEAR);
         int monthOfYear=calendar.get(Calendar.MONTH);

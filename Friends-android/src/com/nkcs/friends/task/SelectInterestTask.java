@@ -49,6 +49,7 @@ public class SelectInterestTask extends AsyncTask<String, Void, String>{
 		this.adapter=adapter;
 		
 		MyApp myApp = new MyApp();
+		
 		this.url = myApp.getLiuURL() + "InterestShowServlet";
 	}
 	@Override

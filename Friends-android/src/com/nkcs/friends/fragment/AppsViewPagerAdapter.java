@@ -17,6 +17,7 @@ public class AppsViewPagerAdapter extends FragmentPagerAdapter {
 		this.lstTitles = lstTitles;
 	}
 	
+	
 	@Override
 	public Fragment getItem(int position) {
 		return (this.lstFragments == null || this.lstFragments.size() == 0) ? null : this.lstFragments.get(position);

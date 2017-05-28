@@ -18,6 +18,7 @@ public class XmlParserHandler extends DefaultHandler {
 		
 	}
 
+	
 	public List<ProvinceModel> getDataList() {
 		return provinceList;
 	}

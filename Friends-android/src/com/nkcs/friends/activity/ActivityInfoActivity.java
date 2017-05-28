@@ -48,6 +48,7 @@ public class ActivityInfoActivity extends Activity {
 	private ImageView imaAcPhoto;
 	private Button btnAttend;
 
+	
 	private String url;
 	private String responseText;
 	private String imageURL;

@@ -35,6 +35,7 @@ public class GetChatRecordTask extends AsyncTask<String, Void, String> {
 		MyApp myApp = new MyApp();
 		this.url = myApp.getLiuURL() + "GetChatRecordServlet";
 	}
+	
 
 	@Override
 	protected String doInBackground(String... arg0) {

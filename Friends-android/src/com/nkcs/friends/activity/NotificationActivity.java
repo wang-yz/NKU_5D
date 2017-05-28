@@ -23,6 +23,7 @@ public class NotificationActivity extends Activity {
 		sendNotification(R.drawable.ic_launcher, "三人行提醒您：您有新活动要参加","三人行", "您有新活动要参加，点击查看详情", System.currentTimeMillis());
 		
 	}
+	
 
 	//发送通知
 	@SuppressWarnings("deprecation")

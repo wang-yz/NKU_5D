@@ -42,6 +42,7 @@ public class MyFriendsActivity extends Activity {
 	private Dialog dlgDelete;
 	private int num;
 	
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

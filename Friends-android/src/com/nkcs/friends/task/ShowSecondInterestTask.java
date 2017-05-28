@@ -46,6 +46,7 @@ public class ShowSecondInterestTask extends AsyncTask<String, Void, String> {
 		System.out.println("跳转到了ShowSecondInterestTask");
 	}
 	
+	
 	@Override
 	protected String doInBackground(String... arg0) {
 		int_type = arg0[0];

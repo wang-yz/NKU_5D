@@ -33,6 +33,7 @@ public class ActivityAdapter extends BaseAdapter {
 		this.layout = LayoutInflater.from(context);
 	}
 
+	
 	@Override
 	public int getCount() {
 		return data.size();

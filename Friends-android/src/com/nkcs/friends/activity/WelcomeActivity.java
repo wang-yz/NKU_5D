@@ -36,6 +36,7 @@ public class WelcomeActivity extends Activity implements OnViewChangeListener{
 		
 		initView();
 	}
+	
 
 	private void initView() {
 		mScrollLayout = (MyScrollLayout) findViewById(R.id.ScrollLayout);

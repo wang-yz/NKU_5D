@@ -82,6 +82,7 @@ public class SelectBackTask extends AsyncTask<String, Void, String> {
 			params.add(new BasicNameValuePair("userid", userid+""));
 			params.add(new BasicNameValuePair("listInfo", listInfo));
 			
+			
 			// 设置请求参数
 			request.setEntity(new UrlEncodedFormEntity(params, HTTP.UTF_8));
 			// 发出post请求

@@ -31,6 +31,7 @@ public class SelectFriendsActivity extends Activity {
 	public MyAdapter adapter;
 	private int friendsid;
 
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);

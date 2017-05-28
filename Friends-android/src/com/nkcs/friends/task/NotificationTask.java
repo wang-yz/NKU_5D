@@ -51,6 +51,7 @@ public class NotificationTask extends AsyncTask<String, Void, String> {
 		this.url = myApp.getLiuURL() + "MessageNotifyServlet";
 	}
 
+	
 	@Override
 	protected String doInBackground(String... arg0) {
 		

@@ -36,6 +36,7 @@ public class GuessLikeTask extends AsyncTask<String, Void, String>{
 
 	private String url;
 	
+	
 	private int userid;
 	private String responseText;
 	private RecommendFragment context;

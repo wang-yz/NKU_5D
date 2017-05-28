@@ -39,6 +39,7 @@ public class UserCalendarActivity extends Activity {
 	private ImageButton calendarRight;
 	private SimpleDateFormat format;
 	
+	
 	private List<Activities> dataActivity=new ArrayList<Activities>();
 	private ActivityAdapter adapterActivity;
 	private String userid;

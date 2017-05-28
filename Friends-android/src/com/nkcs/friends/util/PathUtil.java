@@ -35,6 +35,7 @@ public class PathUtil {
 					int index = cursor.getColumnIndex(ImageColumns.DATA);
 
 					if (index > -1) {
+						//
 						path = cursor.getString(index);
 					}
 				}

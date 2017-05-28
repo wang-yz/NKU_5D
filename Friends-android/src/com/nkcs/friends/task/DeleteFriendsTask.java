@@ -39,6 +39,7 @@ public class DeleteFriendsTask extends AsyncTask<String, Void, String> {
 		this.url = myApp.getLiuURL() + "DeleteFriendsServlet";
 	}
 
+	
 	@Override
 	protected String doInBackground(String... arg0) {
 		String nickname = arg0[0];

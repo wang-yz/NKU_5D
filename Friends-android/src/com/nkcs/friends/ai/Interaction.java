@@ -10,6 +10,7 @@ import com.nkcs.friends.ai.ChatMessage.Type;
 import com.nkcs.friends.fragment.FragmentManagerActivity;
 
 
+
 public class Interaction {
 	/**
 	 * 进行用户msg交互处理

@@ -35,6 +35,7 @@ public class Chatroom_FriendFragment extends Fragment {
 	
 	public MyAdapter adapter;
 
+	
 	@Override
 	public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
 		View viewFriendList = inflater.inflate(R.layout.fragment_friend_chatroom, null);

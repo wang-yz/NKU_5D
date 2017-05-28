@@ -16,7 +16,9 @@ public class ChatMessage
 	
 	public ChatMessage()
 	{
+		
 	}
+	
 	
 	public ChatMessage(String msg, Type type, Date date)
 	{

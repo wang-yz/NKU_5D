@@ -30,6 +30,7 @@ public class ChatMessageAdapter extends BaseAdapter
 		return mDatas.size();
 	}
 
+	
 	@Override
 	public Object getItem(int position)
 	{

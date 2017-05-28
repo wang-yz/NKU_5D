@@ -25,7 +25,6 @@ public class Header extends LinearLayout {
 
 	private Animation mRotateUpAnim;
 	private Animation mRotateDownAnim;
-
 	private final int ROTATE_ANIM_DURATION = 180;
 
 	public final static int STATE_NORMAL = 0;

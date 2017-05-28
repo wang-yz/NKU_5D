@@ -34,6 +34,7 @@ import android.widget.Toast;
 
 public class ActivityActivity extends Activity implements OnTouchListener, IXListViewListener{
 
+	
 	// 活动部分
 	private List<Activities> dataActivity; // 总容器
 	private List<Activities> tempActivity; // 临时容器，用于存放新的pageSize条数据

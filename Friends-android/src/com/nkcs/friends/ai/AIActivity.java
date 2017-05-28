@@ -36,6 +36,7 @@ public class AIActivity extends Activity {
 	private EditText mInputMsg;
 	private Button mSendMsg;
 
+	
 	private Handler mHandler = new Handler()
 	{
 		public void handleMessage(android.os.Message msg)

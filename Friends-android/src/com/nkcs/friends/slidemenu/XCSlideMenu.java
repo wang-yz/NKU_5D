@@ -1,5 +1,6 @@
 package com.nkcs.friends.slidemenu;
 
+
 import com.nineoldandroids.view.ViewHelper;
 
 import android.animation.FloatEvaluator;
